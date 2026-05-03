@@ -16,7 +16,8 @@ Product management (Add / Update / Delete / List)
 Reservation system
 CSV-based persistence
 Separate execution flows (Admin vs User)
-Project Structure
+   ---
+##Project Structure
 
 .
 ├── main_admin.cpp      # Admin entry point
