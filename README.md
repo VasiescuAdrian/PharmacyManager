@@ -1,66 +1,53 @@
-Pharmacy Management System (C++)
+# Pharmacy Management System (C++)
 
-A lightweight, modular C++ application for managing pharmacy inventory and reservations using object-oriented design and file-based persistence.
+A modular C++ application designed to manage pharmacy inventory and customer reservations using object-oriented principles and file-based persistence.
 
-Overview
+---
+
+## Overview
 
 This project implements a simple pharmacy management system with two distinct roles:
 
-Admin → manages products (CRUD operations)
-User → browses products & creates reservations
+- **Admin** – manages products (CRUD operations)
+- **User** – browses available products and creates reservations
 
-The focus is on clean architecture, modularity, and core C++ concepts.
+The application focuses on clean architecture, modular design, and core C++ concepts.
 
-Features
-Product management (Add / Update / Delete / List)
-Reservation system
-CSV-based persistence
-Separate execution flows (Admin vs User)
-   ---
-# Project Structure
+---
 
-.
-├── main_admin.cpp      # Admin entry point
-├── main_user.cpp       # User entry point
+## Features
+
+- Product management (Create, Read, Update, Delete)
+- Reservation system
+- CSV-based data persistence
+- Separate execution flows for Admin and User
+
+---
+
+## Project Structure
+├── main_admin.cpp # Entry point for admin functionality
+├── main_user.cpp # Entry point for user functionality
 │
 ├── classes/
-│   ├── Produs          # Product model
-│   ├── Rezervare       # Reservation model
-│   ├── Utilizator      # User model
-│   ├── Admin           # Admin logic
-│   └── Repository      # Data handling layer
+│ ├── Produs # Product model
+│ ├── Rezervare # Reservation model
+│ ├── Utilizator # User model
+│ ├── Admin # Admin logic
+│ └── Repository # Data access layer
 │
 └── files/
-    ├── produse.csv
-    └── rezervari.csv
-Build & Run
-# Compile
+├── produse.csv # Product storage
+└── rezervari.csv # Reservation storage
+
+
+---
+
+## ⚙️ Build & Run
+
+### Compile
+```bash
 g++ main_admin.cpp -o admin
 g++ main_user.cpp -o user
-
-# Run
+Run
 ./admin
 ./user
-Technical Highlights
-Object-Oriented Design
-clear separation of responsibilities
-domain-driven structure
-STL Usage
-std::vector for in-memory storage
-File Handling
-CSV parsing for persistence
-C++ Features
-operator overloading (<<)
-modular compilation
-Possible Improvements
-Authentication & roles system
-Search & filtering
-Database integration (SQLite / PostgreSQL)
-GUI (Qt / web interface)
-Why this project?
-
-This project demonstrates:
-
-ability to design modular C++ applications
-understanding of data persistence without external dependencies
-writing clean, maintainable code
