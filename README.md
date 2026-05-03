@@ -65,3 +65,4 @@ g++ main_user.cpp -o user
 ## Summary
 
 This project demonstrates the ability to design and implement a structured C++ application with modular architecture and persistent storage.
+It is made by a two man team. My first ever team project.
